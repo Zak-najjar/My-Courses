@@ -4,15 +4,19 @@ body  {
   justify-content: center;
   align-items: flex-start;
 }
-header {
+.cont {
   width: 950px;
+}
+header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
   font-size: 50px;
   background-color: #eee;
   border-radius: 40px;
-  margin-top: 50px;
+  margin: auto;
 }
 .home  {
   font-size: 1em;
@@ -21,6 +25,7 @@ header {
 .list  {
   line-height: 50px;
   margin-right: 50px;
+  font-size: 1em;
 }
 span  {
   padding: 10px;
@@ -41,9 +46,9 @@ a {
 }
 
 main  {
-  width: 950px;
+  width: 100%;
   height: fit-content;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 50px;
   background-color: #eee;
   border-radius: 40px;
@@ -51,5 +56,41 @@ main  {
   direction: rtl;
 }
 main li {
-  margin: 20px;
+  margin: 25px;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+ul  {
+  font-size: 28px;
+}
+.head {
+  list-style: square;
+  margin-bottom: 0;
+}
+.side {
+  list-style: disc;
+}
+
+@media (max-width:450px) {
+  header {
+      font-size: 18px;
+      line-height: 20px;
+  }
+  ul {
+      font-size: 18px;
+  }
+  .cont {
+      width: 300px;
+  }
+  .list {
+      line-height: 20px;
+  }
+}
+
+@media (min-width:451px) and (max-width:620px) {
+  header {
+    font-size: 28px;
+    line-height: 50px;
+  }
 }
