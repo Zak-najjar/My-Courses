@@ -17,6 +17,7 @@ header {
   background-color: #eee;
   border-radius: 40px;
   margin: auto;
+  position: sticky;
 }
 .home  {
   font-size: 1em;
@@ -67,6 +68,13 @@ ul  {
 .head {
   list-style: square;
   margin-bottom: 0;
+}
+.head::before {
+  content: 'اهدافي';
+  position: absolute;
+  left: 50%;
+  font-weight: bold;
+  font-size: 38px;
 }
 .side {
   list-style: disc;

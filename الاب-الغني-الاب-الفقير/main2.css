@@ -1,95 +1,97 @@
 body  {
-    max-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .cont {
-    width: 950px;
+  width: 950px;
 }
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    font-size: 50px;
-    background-color: #eee;
-    border-radius: 40px;
-    margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 50px;
+  background-color: #eee;
+  border-radius: 40px;
+  margin: auto;
+  position: sticky;
+  top: 0;
 }
 .home  {
-    font-size: 1em;
-    margin-left: 30px;
+  font-size: 1em;
+  margin-left: 30px;
 }
 .list  {
-    line-height: 50px;
-    margin-right: 50px;
-    font-size: 1em;
+  line-height: 50px;
+  margin-right: 50px;
+  font-size: 1em;
 }
 span  {
-    padding: 10px;
-    font-size: .5em;
-    background-color: #aaa;
-    align-self: flex-start;
-    border-radius: 1em;
-    transition: all .7s ease-in-out;
+  padding: 10px;
+  font-size: .5em;
+  background-color: #aaa;
+  align-self: flex-start;
+  border-radius: 1em;
+  transition: all .7s ease-in-out;
 }
 span:hover {
-    padding: 20px;
-    border-radius: 2em;
-    font-size: .8em;
+  padding: 20px;
+  border-radius: 2em;
+  font-size: .8em;
 }
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 main  {
-    width: 100%;
-    height: fit-content;
-    padding: 20px 0;
-    font-size: 50px;
-    background-color: #eee;
-    border-radius: 40px;
-    margin-top: 30px;
-    direction: rtl;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 0;
+  font-size: 50px;
+  background-color: #eee;
+  border-radius: 40px;
+  margin-top: 30px;
+  direction: rtl;
 }
 main li {
-    margin: 25px;
-    padding: 30px;
-    margin-bottom: 0;
+  margin: 25px;
+  padding: 30px;
+  margin-bottom: 0;
 }
 
 ul  {
-    font-size: 28px;
+  font-size: 28px;
 }
 .head {
-    list-style: square;
-    margin-bottom: 0;
+  list-style: square;
+  margin-bottom: 0;
 }
 .side {
-    list-style: disc;
+  list-style: disc;
 }
 
 @media (max-width:450px) {
-    header {
-        font-size: 18px;
-        line-height: 20px;
-    }
-    ul {
-        font-size: 18px;
-    }
-    .cont {
-        width: 300px;
-    }
-    .list {
-        line-height: 20px;
-    }
+  header {
+      font-size: 18px;
+      line-height: 20px;
+  }
+  ul {
+      font-size: 18px;
+  }
+  .cont {
+      width: 300px;
+  }
+  .list {
+      line-height: 20px;
+  }
 }
 
 @media (min-width:451px) and (max-width:620px) {
-    header {
-    font-size: 28px;
-    line-height: 50px;
-    }
+  header {
+  font-size: 28px;
+  line-height: 50px;
+  }
 }
