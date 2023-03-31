@@ -28,9 +28,17 @@ body  {
 header {
   font-size: 50px;
 }
-.home  {
+.logo  {
   font-size: 1em;
   margin-left: 30px;
+  margin-top: 8px;
+  transition: all .5s ease-in-out;
+}
+i:hover {
+  transform: translateX(20px);
+}
+i {
+  transition: all .5s ease-in-out;
 }
 .list  {
   line-height: 50px;
