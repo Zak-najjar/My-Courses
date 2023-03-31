@@ -1,23 +1,32 @@
 body  {
   max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
-.cont {
-  width: 950px;
-}
-header {
-  width: 100%;
+
+.contain {
+  padding: 10px 20px 20px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  font-size: 50px;
+  justify-content: space-around;
   background-color: #eee;
   border-radius: 40px;
-  margin: auto;
   position: sticky;
-  top: 0;
+  direction: rtl;
+}
+.contain-1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  background-color: #eee;
+  border-radius: 40px;
+  position: sticky;
+  direction: rtl;
+}
+
+header {
+  font-size: 50px;
 }
 .home  {
   font-size: 1em;
@@ -37,7 +46,7 @@ span  {
   transition: all .7s ease-in-out;
 }
 span:hover {
-  padding: 20px;
+  padding: 15px;
   border-radius: 2em;
   font-size: .8em;
 }
@@ -47,14 +56,9 @@ a {
 }
 
 main  {
-  width: 100%;
   height: fit-content;
-  padding: 20px 0;
   font-size: 50px;
-  background-color: #eee;
-  border-radius: 40px;
-  margin-top: 30px;
-  direction: rtl;
+  padding-top: 30px;
 }
 main li {
   margin: 25px;
@@ -73,25 +77,41 @@ ul  {
   list-style: disc;
 }
 
-@media (max-width:450px) {
-  header {
-      font-size: 18px;
-      line-height: 20px;
-  }
-  ul {
-      font-size: 18px;
-  }
-  .cont {
-      width: 300px;
-  }
-  .list {
-      line-height: 20px;
+@media (min-width:0) {
+  .contain {
+    font-size: .8em;
   }
 }
 
-@media (min-width:451px) and (max-width:620px) {
-  header {
-  font-size: 28px;
-  line-height: 50px;
+
+@media (min-width:686px) {
+  .contain {
+    width: 650px;
+    font-size: 1em;
   }
+  .contain-1 {
+    width: 650px;
+  }
+}
+
+@media (min-width:892px) {
+  .contain {
+    width: 870px;
+    font-size: 1em;
+}
+  .contain-1 {
+    width: 870px;
+}
+}
+
+
+@media (min-width:1000px) {
+  .contain {
+    width: 950px;
+    font-size: 1em;
+}
+  .contain-1 {
+    width: 950px;
+}
+
 }
